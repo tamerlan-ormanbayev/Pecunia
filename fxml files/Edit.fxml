@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pecunia.EditController">
+    <children>
+        <Button layoutX="34.0" layoutY="336.0" mnemonicParsing="false" onAction="#switchtosceneMain" text="Back" />
+        <TextField fx:id="amount" layoutX="34.0" layoutY="57.0" prefHeight="26.0" prefWidth="150.0" />
+        <ChoiceBox fx:id="category" layoutX="34.0" layoutY="96.0" prefWidth="150.0" />
+        <ChoiceBox fx:id="recur" layoutX="34.0" layoutY="131.0" prefWidth="150.0" />
+        <Button layoutX="32.0" layoutY="174.0" mnemonicParsing="false" onAction="#EditWithASwitch" prefHeight="26.0" prefWidth="82.0" text="Edit" />
+        <ListView fx:id="list" layoutX="318.0" layoutY="32.0" prefHeight="330.0" prefWidth="264.0" />
+      <Label fx:id="Transactionlabel" layoutX="318.0" prefHeight="37.0" prefWidth="274.0" text="Select Transaction from a list" />
+      <Button layoutX="244.0" layoutY="336.0" mnemonicParsing="false" onAction="#DeleteTransaction" prefHeight="26.0" prefWidth="56.0" text="Delete" />
+      <Label layoutX="32.0" layoutY="15.0" text="Edit">
+         <font>
+            <Font name="System" size="30.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

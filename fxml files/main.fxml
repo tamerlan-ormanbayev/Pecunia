@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pecunia.MainController">
+   <children>
+      <Button layoutX="34.0" layoutY="62.0" mnemonicParsing="false" onAction="#showpopuptransaction" prefHeight="30.0" prefWidth="180.0" text="Add Transaction">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="34.0" layoutY="102.0" mnemonicParsing="false" onAction="#switchtosceneEdit" prefHeight="30.0" prefWidth="180.0" text="Edit Transaction">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="34.0" layoutY="141.0" mnemonicParsing="false" onAction="#switchtosceneStats" prefHeight="30.0" prefWidth="180.0" text="Statistics">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="34.0" layoutY="179.0" mnemonicParsing="false" onAction="#switchtosceneWallet" prefHeight="30.0" prefWidth="180.0" text="Wallet settings">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="34.0" layoutY="336.0" mnemonicParsing="false" onAction="#quit" text="Exit" />
+      <Button layoutX="273.0" layoutY="337.0" mnemonicParsing="false" onAction="#Save" text="Save" />
+      <ListView fx:id="list" layoutX="328.0" layoutY="24.0" prefHeight="339.0" prefWidth="255.0" />
+      <Label layoutX="34.0" layoutY="14.0" prefHeight="48.0" prefWidth="244.0" text="My Pecunia wallet">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="6.0" prefHeight="17.0" prefWidth="255.0" text="Amount, category, recurrance" />
+   </children>
+</AnchorPane>

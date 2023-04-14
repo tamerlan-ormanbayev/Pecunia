@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pecunia.WalletController">
+   <children>
+      <Button layoutX="34.0" layoutY="336.0" mnemonicParsing="false" onAction="#switchtosceneMain" text="Back" />
+      <Label layoutX="34.0" layoutY="14.0" prefHeight="48.0" prefWidth="265.0" text="Your wallet">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="WalletName" layoutX="34.0" layoutY="71.0" prefHeight="26.0" prefWidth="305.0" text="Wallet name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="WalletID" layoutX="34.0" layoutY="97.0" prefHeight="26.0" prefWidth="240.0" text="Wallet ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="TrAmount" layoutX="34.0" layoutY="123.0" prefHeight="26.0" prefWidth="305.0" text="Total amount of transactions:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="TrSum" layoutX="34.0" layoutY="149.0" prefHeight="26.0" prefWidth="305.0" text="Total sum of transactions:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="438.0" layoutY="336.0" mnemonicParsing="false" onAction="#AboutDisplay" text="About Pecunia wallet" />
+      <Label layoutX="34.0" layoutY="175.0" prefHeight="26.0" prefWidth="131.0" text="Wallet currency:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="currency" layoutX="164.0" layoutY="178.0" prefHeight="26.0" prefWidth="45.0" />
+      <Button layoutX="438.0" layoutY="72.0" mnemonicParsing="false" onAction="#ChangeName" prefHeight="26.0" prefWidth="131.0" text="Change wallet name" />
+      <Button layoutX="438.0" layoutY="110.0" mnemonicParsing="false" onAction="#switchtosceneWelcome" prefHeight="26.0" prefWidth="131.0" text="Load another wallet" />
+   </children>
+</AnchorPane>

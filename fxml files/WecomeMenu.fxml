@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pecunia.WelcomeController">
+   <children>
+      <Button layoutX="34.0" layoutY="336.0" mnemonicParsing="false" onAction="#quit" text="Exit" />
+      <Button layoutX="273.0" layoutY="337.0" mnemonicParsing="false" onAction="#New" text="New" />
+      <ListView fx:id="Files" layoutX="328.0" layoutY="24.0" prefHeight="339.0" prefWidth="255.0" />
+      <Label layoutX="34.0" layoutY="14.0" prefHeight="48.0" prefWidth="290.0" text="Welcome to Pecunia">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="62.0" prefHeight="39.0" prefWidth="149.0" text="Please Select a Wallet">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
